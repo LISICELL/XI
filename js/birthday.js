@@ -113,7 +113,7 @@ function showFinalImageAndVoice() {
     img.id = 'final-image';
     img.style.cssText = `
         position: fixed;
-        bottom: 34%;
+        bottom: 34.5%;
         right: 13%;
         transform: none;
         width: 200px;
