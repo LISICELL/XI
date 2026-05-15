@@ -983,3 +983,274 @@ body.transition-page {
     font-size: 1.4rem;
     opacity: 0.9;
 }
+
+/* ========== 移动端全局优化 ========== */
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+        -webkit-tap-highlight-color: transparent;
+        touch-action: manipulation;
+    }
+}
+
+/* ========== 登录页移动端优化 ========== */
+@media (max-width: 480px) {
+    .login-page .login-card {
+        width: 92%;
+        padding: 28px 20px;
+        border-radius: 20px;
+    }
+
+    .login-page .birthday-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .login-page .cake {
+        font-size: 28px;
+    }
+
+    .login-page .title {
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+    }
+
+    .login-page .subtitle {
+        font-size: 0.8rem;
+    }
+
+    .login-page .input-wrapper input {
+        padding: 12px 12px 12px 40px;
+        font-size: 16px; /* 防止iOS缩放 */
+        border-radius: 12px;
+    }
+
+    .login-page .input-icon {
+        font-size: 16px;
+        left: 12px;
+    }
+
+    .login-page .input-label {
+        font-size: 0.8rem;
+    }
+
+    .login-page .login-btn {
+        padding: 14px 20px;
+        font-size: 1rem;
+        border-radius: 12px;
+    }
+
+    .login-page .card-footer {
+        margin-top: 16px;
+    }
+
+    .login-page .footer-text {
+        font-size: 0.75rem;
+    }
+
+    .login-page .particle {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .login-page .login-card {
+        padding: 24px 16px;
+    }
+
+    .login-page .title {
+        font-size: 1.2rem;
+    }
+
+    .login-page .input-wrapper input {
+        padding: 10px 10px 10px 36px;
+    }
+}
+
+/* 横屏手机优化 */
+@media (max-height: 500px) and (orientation: landscape) {
+    .login-page .login-card {
+        padding: 20px 24px;
+        max-width: 380px;
+    }
+
+    .login-page .card-header {
+        margin-bottom: 16px;
+    }
+
+    .login-page .birthday-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 8px;
+    }
+
+    .login-page .cake {
+        font-size: 24px;
+    }
+
+    .login-page .login-form {
+        gap: 12px;
+    }
+}
+
+/* ========== birthday.html 移动端优化 ========== */
+@media (max-width: 768px) {
+    .candles-layer {
+        touch-action: manipulation;
+    }
+
+    .candle {
+        width: 14px;
+        height: 50px;
+    }
+
+    .candle::before {
+        width: 8px;
+        height: 36px;
+    }
+
+    .candle .flame {
+        width: 12px;
+        height: 16px;
+        top: -10px;
+    }
+
+    .candle:not(.extinguished):hover {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    .candle:not(.extinguished):active {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    #progress {
+        font-size: 1rem;
+        padding: 8px 16px;
+        top: 12px;
+        right: 12px;
+        border-radius: 20px;
+    }
+
+    #message {
+        font-size: 0.95rem;
+        padding: 12px 20px;
+        bottom: 60px;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .candle {
+        width: 12px;
+        height: 40px;
+    }
+
+    .candle::before {
+        width: 6px;
+        height: 28px;
+    }
+
+    .candle::after {
+        top: 8px;
+        height: 2px;
+    }
+
+    .candle .flame {
+        width: 10px;
+        height: 13px;
+        top: -8px;
+    }
+
+    #progress {
+        font-size: 0.9rem;
+        padding: 6px 14px;
+    }
+
+    #message {
+        font-size: 0.85rem;
+        padding: 10px 16px;
+        bottom: 50px;
+    }
+}
+
+/* 小屏手机蜡烛微调 */
+@media (max-width: 375px) {
+    .candle {
+        width: 10px;
+        height: 36px;
+    }
+
+    .candle::before {
+        width: 5px;
+        height: 24px;
+    }
+
+    .candle .flame {
+        width: 8px;
+        height: 11px;
+    }
+}
+
+/* ========== 过渡页移动端优化 ========== */
+@media (max-width: 768px) {
+    body.transition-page .subtitle-wrapper {
+        min-width: 250px;
+        padding: 0 20px;
+    }
+
+    .subtitle-text {
+        white-space: normal !important;
+        word-wrap: break-word;
+        max-width: 100%;
+        line-height: 1.5;
+    }
+
+    .music-visualizer {
+        top: 25%;
+        height: 30px;
+        gap: 4px;
+    }
+
+    .music-visualizer .bar {
+        width: 3px;
+    }
+
+    .progress-bar-container {
+        width: 160px;
+        bottom: 60px;
+    }
+
+    .play-button {
+        padding: 14px 28px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .subtitle-text {
+        font-size: 1.1rem !important;
+        letter-spacing: 1px;
+    }
+
+    .subtitle-cursor {
+        font-size: 1.1rem !important;
+    }
+
+    .music-visualizer {
+        top: 22%;
+    }
+
+    .progress-bar-container {
+        width: 140px;
+        bottom: 50px;
+    }
+}
+
+/* ========== fireworks.html 移动端优化 ========== */
+@media (max-width: 768px) {
+    #music-image {
+        height: 24px !important;
+        right: 12px !important;
+        top: 12px !important;
+    }
+}

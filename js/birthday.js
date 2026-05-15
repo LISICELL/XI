@@ -40,7 +40,12 @@ function initCandles() {
         smoke.className = 'smoke';
         candle.appendChild(smoke);
 
+        // 同时支持点击和触摸
         candle.addEventListener('click', () => extinguish(candle, index));
+        candle.addEventListener('touchend', (e) => {
+            e.preventDefault();
+            extinguish(candle, index);
+        });
     });
 }
 

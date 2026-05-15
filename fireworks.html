@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<title>Happy Birthday!</title>
 	</head>
 	<style>
@@ -70,7 +70,16 @@
 			controls="controls" src="./lib/music.mp3"></audio>
 		<img id="music-image" style="position: fixed;z-index: 999;height:30px;right: 20px;top: 20px;" src="./lib/cc.jpg"
 			alt="" />
-	</body>
+	    <style>
+        @media (max-width: 768px) {
+            #music-image {
+                height: 28px !important;
+                right: 12px !important;
+                top: 12px !important;
+            }
+        }
+    </style>
+</body>
 	<script src='./lib/gameCanvas-4.0.js'></script>
 	<script src="./lib/script.js"></script>
 	<script>
