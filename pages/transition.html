@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日祝福</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="transition-page">
+    <!-- 多层遮罩，实现渐进式背景 -->
+    <div class="transition-overlay"></div>
+    <div class="transition-overlay-2"></div>
+
+    <!-- 粒子装饰 -->
+    <div class="transition-particles" id="transition-particles"></div>
+
+    <!-- 音乐可视化条 -->
+    <div class="music-visualizer" id="visualizer">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <!-- 字幕容器 -->
+    <div class="subtitle-wrapper">
+        <div class="subtitle-glow"></div>
+        <p id="subtitle-text" class="subtitle-text"></p>
+        <span class="subtitle-cursor" id="cursor">|</span>
+    </div>
+
+    <!-- 进度条 -->
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <!-- 音频 -->
+    <audio id="birthday-song" preload="auto"></audio>
+
+    <script src="../js/transition.js"></script>
+</body>
+</html>

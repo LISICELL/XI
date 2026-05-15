@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日快乐</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- 背景图片层 -->
+    <div class="bg-container">
+        <img src="../assets/img/生日.PNG" alt="生日背景" id="bg-img">
+    </div>
+
+    <!-- 蜡烛层 -->
+    <!-- 蜡烛层 -->
+    <div class="candles-layer" id="candles-layer">
+        <!-- ========== 第1层（顶层）- 3根 ========== -->
+        <div class="candle" data-index="0" style="top: 55%; left: 50.5%;"></div>
+        <div class="candle" data-index="1" style="top: 55%; left: 57%;"></div>
+        <div class="candle" data-index="2" style="top: 55%; left: 63%;"></div>
+
+        <!-- ========== 第2层（中层）- 6根 ========== -->
+        <div class="candle" data-index="3" style="top: 65%; left: 49%;"></div>
+        <div class="candle" data-index="4" style="top: 65%; left: 52%;"></div>
+        <div class="candle" data-index="5" style="top: 65%; left: 55%;"></div>
+        <div class="candle" data-index="6" style="top: 65%; left: 58%;"></div>
+        <div class="candle" data-index="7" style="top: 65%; left: 61%;"></div>
+        <div class="candle" data-index="8" style="top: 65%; left: 64%;"></div>
+
+        <!-- ========== 第3层（底层）- 8根 ========== -->
+        <div class="candle" data-index="9" style="top: 78%; left: 46.5%;"></div>
+        <div class="candle" data-index="10" style="top: 78%; left: 49%;"></div>
+        <div class="candle" data-index="11" style="top: 78%; left: 52%;"></div>
+        <div class="candle" data-index="12" style="top: 78%; left: 55%;"></div>
+        <div class="candle" data-index="13" style="top: 78%; left: 58%;"></div>
+        <div class="candle" data-index="14" style="top: 78%; left: 61%;"></div>
+        <div class="candle" data-index="15" style="top: 78%; left: 64%;"></div>
+        <div class="candle" data-index="16" style="top: 78%; left: 66.5%;"></div>
+    </div>
+
+    <!-- 进度 -->
+    <div id="progress">0/17</div>
+
+    <!-- 消息 -->
+    <div id="message"></div>
+
+    <!-- 音乐 -->
+    <audio id="bgm" loop></audio>
+
+    <script src="../js/birthday.js"></script>
+</body>
+</html>
